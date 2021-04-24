@@ -18,6 +18,10 @@ export interface CdnOptions {
    */
   bucket: string;
   /**
+   * A prefix to prepend to the Amazon S3 key
+   */
+  prefix?: string
+  /**
    * The Amazon S3 Access Key
    */
   key: string;
