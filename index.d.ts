@@ -18,9 +18,17 @@ export interface CdnOptions {
    */
   bucket: string;
   /**
-   * A prefix to prepend to the Amazon S3 key
+   * A prefix to prepend to the Amazon S3 key. 
+   * 
+   * Use if you have set an Origin Path in your CloudFront settings
    */
   prefix?: string
+  /**
+   * Gets or sets if the `prefix` should also be appended to the CDN path.
+   * 
+   * Default: `true`
+   */
+  appendPrefix?: boolean;
   /**
    * The Amazon S3 Access Key
    */
