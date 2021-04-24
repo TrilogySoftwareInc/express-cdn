@@ -68,9 +68,11 @@ export interface CdnOptions {
     tempDir?: string;
   },
   /**
-   * Allow unminified JS to be uploaded
+   * Upload assets to S3 regardless of if uglify/minify/optimize fails
+   * 
+   * Default: `false`
    */
-  allowUnminified: boolean;
+  continueOnFailure: boolean;
   /**
    * Disable walking
    */
